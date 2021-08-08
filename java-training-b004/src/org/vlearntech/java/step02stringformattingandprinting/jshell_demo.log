@@ -1,0 +1,134 @@
+jshell> int a = 10
+a ==> 10
+
+jshell> int b = 20
+b ==> 20
+
+jshell> int c = a * b
+c ==> 200
+
+jshell> System.out.println(c)
+200
+
+jshell> System.out.println("result is " + c)
+result is 200
+
+jshell> System.out.println("Hello to all of you")
+Hello to all of you
+
+jshell> System.out.print("Hello to all of you")
+Hello to all of you
+jshell> String message = "Hello"
+message ==> "Hello"
+
+jshell> message + "World"
+$9 ==> "HelloWorld"
+
+jshell> message
+message ==> "Hello"
+
+jshell> message.concat(" World")
+$11 ==> "Hello World"
+
+jshell> message
+message ==> "Hello"
+
+jshell> message = message.concat(" World")
+message ==> "Hello World"
+
+jshell> message
+message ==> "Hello World"
+
+jshell> message = message + " again"
+message ==> "Hello World again"
+
+jshell> message
+message ==> "Hello World again"
+
+jshell> 10 + 20
+$17 ==> 30
+
+jshell> 10 + (20 - 5)
+$18 ==> 25
+
+jshell> "Hello" + " World"
+$19 ==> "Hello World"
+
+jshell> "Hello" + 10
+$20 ==> "Hello10"
+
+jshell> "Hello" + 10 + 20
+$21 ==> "Hello1020"
+
+jshell> "Hello" + (10 + 20)
+$22 ==> "Hello30"
+
+jshell> 10 + "Hello"
+$23 ==> "10Hello"
+
+jshell> 10 + 20 + "Hello"
+$24 ==> "30Hello"
+
+jshell> "The last " + 15 + " minutes has been very interactive"
+$25 ==> "The last 15 minutes has been very interactive"
+
+jshell> "The last " + 15*2 + " minutes has been very interactive"
+$26 ==> "The last 30 minutes has been very interactive"
+
+jshell> "The last " + 15*2 + " minutes have been very interactive"
+$27 ==> "The last 30 minutes have been very interactive"
+
+jshell> "The last " + 15 + 2 + " minutes have been very interactive"
+$28 ==> "The last 152 minutes have been very interactive"
+
+jshell> "The last " + (15 + 2) + " minutes have been very interactive"
+$29 ==> "The last 17 minutes have been very interactive"
+
+jshell> int a = 23
+a ==> 23
+
+jshell> "The last " + (15 + 2 + a) + " minutes have been very interactive"
+$31 ==> "The last 40 minutes have been very interactive"
+
+jshell> "The last " + 2a + " minutes have been very interactive"
+|  Error:
+|  ';' expected
+|  "The last " + 2a + " minutes have been very interactive"
+|                 ^
+|  Error:
+|  not a statement
+|  "The last " + 2a + " minutes have been very interactive"
+|                 ^---------------------------------------^
+|  Error:
+|  missing return statement
+|  "The last " + 2a + " minutes have been very interactive"
+|  ^------------------------------------------------------^
+
+jshell> String.format("The last %d minutes have been very interactive", 15 + 2 + a)
+$32 ==> "The last 40 minutes have been very interactive"
+
+jshell> String name = "Rakesh"
+name ==> "Rakesh"
+
+jshell> int age = 35
+age ==> 35
+
+jshell> int salary = 100000
+salary ==> 100000
+
+jshell> "Rakesh is 35 years old, has an overall experience of 13 years and earns 100000 per month"
+$36 ==> "Rakesh is 35 years old, has an overall experience of 13 years and earns 100000 per month"
+
+jshell> name + " is " + age + " years old, has an overall experience of " + (35-22) + " years and earns " + salary + "pm"
+$37 ==> "Rakesh is 35 years old, has an overall experience of 13 years and earns 100000pm"
+
+jshell> name + " is " + age + " years old, has an overall experience of " + (35-22) + " years and earns " + salary + " pm"
+$38 ==> "Rakesh is 35 years old, has an overall experience of 13 years and earns 100000 pm"
+
+jshell> String.format("%s is %d years old, has an overall experience of %d years and earns %d pm", name, age, age-22, salary)
+$39 ==> "Rakesh is 35 years old, has an overall experience of 13 years and earns 100000 pm"
+
+jshell> "The name of the newest PM in the account is " + name
+$40 ==> "The name of the newest PM in the account is Rakesh"
+
+jshell>
