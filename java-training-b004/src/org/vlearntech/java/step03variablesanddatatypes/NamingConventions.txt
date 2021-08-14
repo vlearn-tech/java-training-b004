@@ -1,0 +1,12 @@
+
+//LearningJava // Pascal --> Class Names
+//
+//learningJava // Camel --> variables, methods
+//
+//learningjava // lower--> package names
+//
+//LEARNINGJAVA // discouraged
+//
+//learning_java // snake --> discouraged
+//
+//LEARNING_JAVA // capital snake --> Constants in Java
