@@ -21,8 +21,8 @@ public class StringFormattingAndPrinting {
 
 		System.out.print("\n");
 
-		System.out.printf("%s is %f years old, has an overall experience of %f years and earns %d pm\n", nameOfPerson, age,
-				age - 22, salary);
+		System.out.printf("%s is %f years old, has an overall experience of %f years and earns %d pm\n", nameOfPerson,
+				age, age - 22, salary);
 
 		System.out.println(String.format("Is %s married : %b", nameOfPerson, isMarried));
 
