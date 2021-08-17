@@ -22,13 +22,14 @@ public class StandardIfElseWithRandomValues {
 	}
 
 	private static boolean evaluateEligibility(int age) {
-//		If age > 18, then person is eligible, else no
+//		If age >= 18, then person is eligible, else no
 
-		if (age > 18) {
+		if (age >= 18) {
 			return true;
 		} else {
 			return false;
 		}
+
 	}
 
 }
