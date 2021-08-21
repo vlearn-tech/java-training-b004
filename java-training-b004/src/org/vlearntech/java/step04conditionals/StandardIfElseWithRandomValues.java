@@ -30,6 +30,8 @@ public class StandardIfElseWithRandomValues {
 			return false;
 		}
 
+//		return age >= 18 ? true : false;
+
 	}
 
 }
