@@ -1,0 +1,183 @@
+jshell> 10 + 20
+$1 ==> 30
+
+jshell> 10 / 20
+$2 ==> 0
+
+jshell> 19/20
+$3 ==> 0
+
+jshell> 10.0 / 20
+$4 ==> 0.5
+
+jshell> "Hello" + 10 + 20
+$5 ==> "Hello1020"
+
+jshell> 10 + 20 + "Hello"
+$6 ==> "30Hello"
+
+jshell> 100 % 33
+$7 ==> 1
+
+jshell> 100 % 50
+$8 ==> 0
+
+jshell> int num = 76465
+num ==> 76465
+
+jshell> num % 2 == 1
+$10 ==> true
+
+jshell> num % 2 == 0
+$11 ==> false
+
+jshell> 10 * 3
+$12 ==> 30
+
+jshell> 10 - 3
+$13 ==> 7
+
+jshell> num = 10
+num ==> 10
+
+jshell> num = num + 5
+num ==> 15
+
+jshell> num = num - 3
+num ==> 12
+
+jshell> num = num / 2
+num ==> 6
+
+jshell> num = num % 4
+jshell> i
+i ==> 10
+
+jshell> i = i + 1
+i ==> 11
+
+jshell> i = i - 1
+i ==> 10
+
+jshell> i += 1
+$28 ==> 11
+
+jshell> i -= 1
+$29 ==> 10
+
+jshell> i
+i ==> 10
+
+jshell> i++
+$31 ==> 10
+
+jshell> i = 10
+i ==> 10
+
+jshell> ++i
+$33 ==> 11
+
+jshell> --i
+$34 ==> 10
+
+jshell> i = 99
+i ==> 99
+
+jshell> --i
+$36 ==> 98
+
+jshell> ++i
+$37 ==> 99
+
+jshell> ++i
+$38 ==> 100
+jshell> i
+i ==> 10
+
+jshell> i++
+$49 ==> 10
+
+jshell> i
+i ==> 11
+
+jshell> i++ + i++
+$51 ==> 23
+
+jshell> i
+i ==> 13
+jshell> i = 10
+i ==> 10
+
+jshell> --i + ++i + i-- + i++ // 9 + 10 + 10 + 9
+$64 ==> 38
+
+jshell> i
+i ==> 10
+
+jshell> int age = 18
+age ==> 18
+
+jshell> age > 18
+$67 ==> false
+
+jshell> age >= 18
+$68 ==> true
+
+jshell> age < 18
+$69 ==> false
+
+jshell> age < 21
+$70 ==> true
+
+jshell> age <= 21
+$71 ==> true
+
+jshell> age <= 18
+$72 ==> true
+i ==> 10
+jshell> age++ > 18
+$73 ==> false
+
+jshell> age++ > 18
+$74 ==> true
+
+jshell> age
+age ==> 20
+
+jshell> age == 18
+$76 ==> false
+
+jshell> age != 18
+$77 ==> true
+
+jshell> age
+age ==> 20
+
+jshell> String citizenship = "IN"
+citizenship ==> "IN"
+
+jshell> age >= 18
+$80 ==> true
+
+jshell> citizenship == "IN"
+$81 ==> true
+
+jshell> citizenship.equals("IN")
+$82 ==> true
+
+jshell> age.equals(18)
+|  Error:
+|  int cannot be dereferenced
+|  age.equals(18)
+|  ^--------^
+
+jshell> age >= 18 && citizenship.equals("IN")
+$83 ==> true
+
+jshell> age >= 18 && citizenship.equals("AU")
+$84 ==> false
+
+jshell> age >= 18 || citizenship.equals("AU")
+$85 ==> true
+
+jshell>
