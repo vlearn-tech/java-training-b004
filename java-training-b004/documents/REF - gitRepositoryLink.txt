@@ -1,2 +1,4 @@
 https://github.com/vlearn-tech/java-training-b004.git
 
+https://github.com/vlearn-tech/edabit-practice.git
+
