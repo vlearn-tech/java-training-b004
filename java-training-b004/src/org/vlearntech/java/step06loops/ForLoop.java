@@ -9,7 +9,7 @@ public class ForLoop {
 		System.out.println("Start printing numbers...");
 
 		// initialization, exit condition, increment - all in same line
-		for (int numberToPrint = 11; numberToPrint <= 10; ++numberToPrint) {
+		for (int numberToPrint = 1; numberToPrint <= 10; ++numberToPrint) {
 			System.out.print(numberToPrint + " ");
 		}
 
