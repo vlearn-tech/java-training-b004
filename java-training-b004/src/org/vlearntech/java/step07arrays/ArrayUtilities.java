@@ -32,9 +32,9 @@ public class ArrayUtilities {
 		names[5] = "Prakash";
 		System.out.println(Arrays.toString(names));
 
-		// Delete an element from the array
+		// Delete an element from the array >> Not possible in arrays (shortcoming)
 
-		// Add a new element into the array
+		// Add a new element into the array >> Not possible in arrays (shortcoming)
 
 	}
 }
