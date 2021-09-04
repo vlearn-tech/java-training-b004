@@ -4,7 +4,7 @@ public class StringArrays {
 	public static void main(String[] args) {
 
 		String[] names = { "Albert", "Bob", "Charlie", "Denise", "Ellie", "Frank", "Gunther", "Harry", "Ian", "Jack",
-				"Katherine", "Laura", "Maurice", "Nathan" };
+				"Katherine", "Laura", "Maurice", "Nathan", "Oscar", "Polter" };
 
 		/*
 		 * jshell> String[] names = { "Albert", "Bob", "Charlie", "Denise", "Ellie", "Frank", "Gunther", "Harry", "Ian",
@@ -46,5 +46,27 @@ public class StringArrays {
 //			System.out.println(name  + " : " + name.length() );
 		}
 
+		// Find the list of names having the letter 'o' in it
+		System.out.println("\n\n========== FIND NAMES CONTAINING A LETTER ===============");
+		for (String name : names) {
+			if (containsLetter(name, "o")) {
+				System.out.println(name);
+			}
+		}
+
 	}
+
+	private static boolean containsLetter(String name, String string) {
+		String[] letters = name.split("");
+//		System.out.println(Arrays.toString(letters));
+
+		for (String letter : letters) {
+			if (letter.equalsIgnoreCase(string)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 }
