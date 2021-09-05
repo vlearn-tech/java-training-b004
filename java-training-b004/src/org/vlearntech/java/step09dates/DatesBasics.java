@@ -47,8 +47,11 @@ public class DatesBasics {
 																									// and m & mm
 		System.out.println(date3);
 
-		// What is the difference between two dates
+		// What is the difference between two dates in weeks
 		System.out.println(ChronoUnit.WEEKS.between(date2, date1));
+
+		// What is the difference between two dates in days
+		System.out.println(ChronoUnit.DAYS.between(date2, date1));
 
 		Period period = Period.between(date2, date1);
 		System.out.println(period);
