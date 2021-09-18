@@ -1,0 +1,5 @@
+Person [name=Subrat, age=19, gender=M, isMarried=false, city=Hyderabad]
+Person [name=Swagatika, age=18, gender=F, isMarried=null, city=null]
+Person [name=Supreet, age=21, gender=M, isMarried=false, city=Bhopal]
+Person [name=Priyabrat, age=21, gender=M, isMarried=false, city=Bhubaneswar]
+Person [name=Atish, age=22, gender=M, isMarried=false, city=Cuttack]
