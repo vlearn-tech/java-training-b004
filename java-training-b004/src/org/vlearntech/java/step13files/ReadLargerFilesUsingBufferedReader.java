@@ -14,5 +14,7 @@ public class ReadLargerFilesUsingBufferedReader {
 		while ((line = reader.readLine()) != null) {
 			System.out.println(line);
 		}
+
+		reader.close(); // should close
 	}
 }

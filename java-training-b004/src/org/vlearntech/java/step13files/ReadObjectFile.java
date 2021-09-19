@@ -21,7 +21,8 @@ public class ReadObjectFile {
 				}
 			}
 		} catch (ClassNotFoundException | IOException e) {
-//			e.printStackTrace();
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 	}
