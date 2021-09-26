@@ -8,16 +8,12 @@ public class Person {
 	LocalDate dateOfBirth;
 	Character gender;
 	Boolean isMarried;
-//	String addressLine1;
-//	String addressLine2;
-	String city;
-//	Integer zipcode;
-	Integer age;
+	Address address; // Aggregation
 
 	@Override
 	public String toString() {
 		return String.format("Person [name=%s, age=%d, gender=%s, isMarried=%s, city=%s]", name, calculateAge(), gender,
-				isMarried, city);
+				isMarried, address.city);
 	}
 
 	// All Arguments Constructor
@@ -26,7 +22,8 @@ public class Person {
 		this.dateOfBirth = dateOfBirth;
 		this.gender = gender;
 		this.isMarried = isMarried;
-		this.city = city;
+		this.address = new Address();
+		this.address.city = city;
 	}
 
 	// Parameterized Constructor
