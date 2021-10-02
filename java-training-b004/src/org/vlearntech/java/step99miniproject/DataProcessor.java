@@ -34,10 +34,10 @@ public class DataProcessor {
 		// If no, add the entry for the region and then add the employee
 
 		allEmployees.forEach(e -> {
-			if (!employeeByRegion.containsKey(e.region)) {
-				employeeByRegion.put(e.region, new ArrayList<Employee>());
+			if (!employeeByRegion.containsKey(e.getRegion())) {
+				employeeByRegion.put(e.getRegion(), new ArrayList<Employee>());
 			}
-			employeeByRegion.get(e.region).add(e);
+			employeeByRegion.get(e.getRegion()).add(e);
 
 		});
 

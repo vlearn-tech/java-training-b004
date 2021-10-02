@@ -6,16 +6,16 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class Employee {
-	Long id;
-	String firstName;
-	String lastName;
-	Character gender;
-	BigDecimal age;
-	LocalDate dateOfJoining;
-	Integer salary;
-	String phoneNumber;
-	Region region;
-	Integer experienceInMonths;
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private Character gender;
+	private BigDecimal age;
+	private LocalDate dateOfJoining;
+	private Integer salary;
+	private String phoneNumber;
+	private Region region;
+	private Integer experienceInMonths;
 
 	Employee() {
 
@@ -50,6 +50,86 @@ public class Employee {
 			pattern = "d-M-yyyy";
 		}
 		return LocalDate.parse(dateInput, DateTimeFormatter.ofPattern(pattern));
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public Character getGender() {
+		return gender;
+	}
+
+	public void setGender(Character gender) {
+		this.gender = gender;
+	}
+
+	public BigDecimal getAge() {
+		return age;
+	}
+
+	public void setAge(BigDecimal age) {
+		this.age = age;
+	}
+
+	public LocalDate getDateOfJoining() {
+		return dateOfJoining;
+	}
+
+	public void setDateOfJoining(LocalDate dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
+
+	public Integer getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Integer salary) {
+		this.salary = salary;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public Region getRegion() {
+		return region;
+	}
+
+	public void setRegion(Region region) {
+		this.region = region;
+	}
+
+	public Integer getExperienceInMonths() {
+		return experienceInMonths;
+	}
+
+	public void setExperienceInMonths(Integer experienceInMonths) {
+		this.experienceInMonths = experienceInMonths;
 	}
 
 }

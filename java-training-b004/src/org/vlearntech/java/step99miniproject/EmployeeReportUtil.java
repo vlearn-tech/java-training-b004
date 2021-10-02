@@ -11,7 +11,7 @@ public class EmployeeReportUtil {
 	public static void validateIfEmployeeExists(List<Employee> allEmployees, Long employeeToLookFor) {
 
 		for (Employee e : allEmployees) {
-			if (e.id.equals(employeeToLookFor)) {
+			if (e.getId().equals(employeeToLookFor)) {
 				System.out.println("Employee Found! : " + e);
 				return;
 			}
@@ -37,8 +37,9 @@ public class EmployeeReportUtil {
 	public static void findMostExperiencedEmployeeByRegion(Map<Region, List<Employee>> employeeByRegion) {
 		for (Entry<Region, List<Employee>> entry : employeeByRegion.entrySet()) {
 			List<Employee> employeesInRegion = entry.getValue();
-			employeesInRegion.sort(Comparator.comparing((Employee e) -> e.dateOfJoining)); // use reversed() if you want
-																							// least experienced
+			employeesInRegion.sort(Comparator.comparing((Employee e) -> e.getDateOfJoining())); // use reversed() if you
+																								// want
+			// least experienced
 			System.out.println(entry.getKey() + " : " + employeesInRegion.get(0));
 		}
 
@@ -47,7 +48,7 @@ public class EmployeeReportUtil {
 	public static void findYoungestEmployeeByRegion(Map<Region, List<Employee>> employeeByRegion) {
 		for (Entry<Region, List<Employee>> entry : employeeByRegion.entrySet()) {
 			List<Employee> employees = entry.getValue();
-			employees.sort(Comparator.comparing((Employee e) -> e.age));
+			employees.sort(Comparator.comparing((Employee e) -> e.getAge()));
 			System.out.println(entry.getKey() + " : " + employees.get(0));
 		}
 	}
@@ -66,16 +67,16 @@ public class EmployeeReportUtil {
 			List<Employee> employees = entry.getValue();
 			for (Employee e : employees) {
 				report.headCount++;
-				report.numOfFemaleEmployees += e.gender.equals('F') ? 1 : 0;
-				report.maxSalary = e.salary > report.maxSalary ? e.salary : report.maxSalary;
-				report.totalSalary += e.salary;
-				report.minExperienceInMonths = e.experienceInMonths < report.minExperienceInMonths
-						? e.experienceInMonths
+				report.numOfFemaleEmployees += e.getGender().equals('F') ? 1 : 0;
+				report.maxSalary = e.getSalary() > report.maxSalary ? e.getSalary() : report.maxSalary;
+				report.totalSalary += e.getSalary();
+				report.minExperienceInMonths = e.getExperienceInMonths() < report.minExperienceInMonths
+						? e.getExperienceInMonths()
 						: report.minExperienceInMonths;
-				report.maxExperienceInMonths = e.experienceInMonths > report.maxExperienceInMonths
-						? e.experienceInMonths
+				report.maxExperienceInMonths = e.getExperienceInMonths() > report.maxExperienceInMonths
+						? e.getExperienceInMonths()
 						: report.maxExperienceInMonths;
-				report.totalAge = report.totalAge.add(e.age);
+				report.totalAge = report.totalAge.add(e.getAge());
 			}
 			regionalReport.put(report.region, report);
 		}
