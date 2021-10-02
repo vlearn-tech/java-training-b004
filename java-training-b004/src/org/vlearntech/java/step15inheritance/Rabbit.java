@@ -1,6 +1,6 @@
 package org.vlearntech.java.step15inheritance;
 
-public class Rabbit extends Pet {
+public final class Rabbit extends Pet {
 
 	public Rabbit() {
 		System.out.println("A new rabbit is added as a Pet");
