@@ -1,6 +1,6 @@
 package org.vlearntech.java.step15inheritance;
 
-public class HouseWithPets {
+public class HouseOfPetsInheritance {
 	public static void main(String[] args) {
 		Dog duster = new Dog("Duster", "Orange", "Golden Retriever");
 		Cat tammy = new Cat("Tammy", "White", "Persian");
