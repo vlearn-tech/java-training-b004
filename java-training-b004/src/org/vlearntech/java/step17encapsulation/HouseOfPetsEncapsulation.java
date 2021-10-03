@@ -9,7 +9,7 @@ import org.vlearntech.java.step16polymorphism.Dog;
 import org.vlearntech.java.step16polymorphism.Pet;
 import org.vlearntech.java.step16polymorphism.Rabbit;
 
-public class HouseWithPets {
+public class HouseOfPetsEncapsulation {
 	public static void main(String[] args) {
 		Pet duster = new Dog("Duster", "Orange", "Golden Retriever");
 		Pet spooky = new Dog("Spooky", "Brown", "Pug");
