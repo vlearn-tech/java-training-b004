@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HouseWithPets {
+public class HouseOfPetsPolymorphism {
 	public static void main(String[] args) {
 		Pet duster = new Dog("Duster", "Orange", "Golden Retriever");
 		Pet spooky = new Dog("Spooky", "Brown", "Pug");
@@ -17,6 +17,8 @@ public class HouseWithPets {
 		pets.add(tammy);
 		pets.add(wally);
 		pets.add(new Dog("Spider", "Grey", "German Shepherd"));
+		pets.add(new Pet("Puppet", "Brown")); // This is allowed because Pet is not abstract
+		pets.add(new DogOrCat("Dash", "Black", "SomeBreed")); // This is allowed because Pet is not abstract
 
 		// Each pet needs to go to the vet once every quarter for a checkup
 		// Months 1, 4, 7, 10 >> Dog
